@@ -16,7 +16,7 @@
     --light-gray: hsl(0, 0%, 81%);
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
-
+/*------- Mobile Design ----------*/
 body{
     width: 100vw;
     display: flex;
@@ -113,6 +113,8 @@ img {
     color:hsl(0, 0%, 81%);
 }
 
+
+/*-------------Desktop Design ------------------*/
 @media (min-width:700px) {
     body {
         width: 100vw;
