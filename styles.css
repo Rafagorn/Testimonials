@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url(./fonts/BarlowSemiCondensed-Regular.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);      
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grayish-blue);
+    font-family: "Barlow Semi Condensed";
+}
+
+article {
+    box-sizing: border-box;
+    max-width: 23.4375rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1.5rem;
+
+
+}
+
+.one {
+    box-sizing: border-box;
+    grid-area: one;
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-color: var(--moderate-violet);
+    background-position: 80% 0%;
+    color: white;
+
+}
+
+.two {
+    grid-area: two;
+    background-color: var(--very-dark-grayish-blue);
+    color: white;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+    background-color: var(--very-dark-blackish-blue);
+    color: white;
+}
+
+.five {
+    grid-area: five;
+}
+
+.datos {
+    display: flex;
+    align-items: center;   
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2rem;
+}
+.name {
+    font-size: 0.7;
+    
+}
+
+.subtitulo {
+      font-size: 0.8rem;
+      color: var(--light-gray);
+}
+
+ .preview {
+    margin: 1rem 0;
+    font-weight: 600;
+    line-height: 1.3rem;
+}
+
+.subtitulo.claro, 
+.parrafo.claro  {
+    color:hsl(0, 0%, 50%);
+}
+
+.parrafo {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color:hsl(0, 0%, 81%);
+}
+
+@media (min-width:700px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+.grid-layout {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "one one two five"
+                        "three four four five";
+    gap:1rem;
+   
+}
+
+article {
+   max-width:90rem;
+    margin: 0;
+}
+
+}
+
+
+
